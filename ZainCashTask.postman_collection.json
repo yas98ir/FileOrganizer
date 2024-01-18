@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "269b5862-a048-40ac-9c16-f24cc053c506",
+		"name": "ZainCashTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29041209"
+	},
+	"item": [
+		{
+			"name": "FileOrganizer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"files\": [\r\n        {\"letter.txt\": \"Richard\"},\r\n        {\"paper.pdf\": \"Jack\"},\r\n        {\"test.php\": \"Johnny\"},\r\n        {\"numbers.docx\": \"Jack\"}\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/organize-files"
+			},
+			"response": []
+		}
+	]
+}
